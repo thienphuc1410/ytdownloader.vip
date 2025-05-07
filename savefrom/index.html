@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube Downloader - Download YouTube videos in MP3, MP4, 3GP</title>
+    <meta name="description" content="Online download videos from YouTube for FREE to PC, mobile. Supports downloading all formats: MP4, 3GP, WebM, HD videos, convert YouTube to MP3, M4A" />
+    <meta name="robots" content="nofollow, noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://www.y2mate.com/themes/images/logo.png" type="image/x-icon">
+    <style>
+    body {
+        margin: 0;
+        background: #f9f9f9;
+    }
+    .wrap{
+        max-width: 600px;
+        margin: auto;
+    }
+    header {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0;
+        background: #f9f9f9;
+        position: fixed;
+        width: 890px;
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-right: 16px;
+    }
+    ul#menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  ul#menu li {
+    font-family: Open Sans, Arial, sans-serif;
+    margin: 0 10px;
+    font-size: 16px;
+    color: #293a46;
+    cursor: pointer;
+    color: #333;
+    font-weight: 400;
+  }
+
+  ul#menu li:hover {
+    background: #eee;
+    color: #c10841;
+  }
+
+    ul#menu li:hover, ul#menu li.active {
+    border-bottom: solid 2px #1f8cff;
+  }
+ #menu a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  li.bulr {
+    opacity: 0.3;
+  }
+    #logo {
+        color: #293a46;
+        font-size: 23px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        height: auto;
+    }
+
+    #logo img {
+        margin-left: 10px;
+        opacity: 0.85;
+    }
+        iframe#main-iframe { 
+            width: calc(100vw - 320px);
+            height: 100vh;
+            display:block;
+            margin: auto;
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .banner-ngang {
+            position: fixed;
+            left: 50%;  
+            transform:translateX(-50%); 
+            bottom: 0;
+            display: flex;
+        }
+        .ngang-mobi{
+            display: none;
+        }
+        .banner-sidebar {
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform:translateY(-50%);
+            display: flex;
+            flex-direction: column;
+        }
+        .banner-sidebar.banner-right {
+            right: 0;
+            left: auto;
+            padding-left: 17px;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            width: 177px;
+            z-index: 1;
+            top: 0;
+            transform: inherit;
+        }
+
+        
+        @media only screen and (max-width: 1000px) {
+            iframe#main-iframe {
+                width: 100%;
+            }
+            .banner-sidebar {
+                display: none!important;
+            }
+        }
+        @media only screen and (max-width: 728px) {
+            header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+ul#menu {
+    display: none;
+}
+            .banner-ngang {
+                display: none;
+            }
+            .ngang-mobi{
+                display: block;
+            }
+        }
+        ::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+        }
+/*.banner-sidebar.banner-right:before {
+    content: "";
+    height: 50px;
+    top: 0;
+    position: absolute;
+    width: 184px;
+    background: #f9f9f9;
+    right: 0;
+    z-index: 1;
+    }*/
+    .banner-sidebar.banner-right{
+        background: #f9f9f9;
+    }
+    .banner-sidebar.banner-right iframe {
+        z-index: 2;
+    }
+
+    .banner-sidebar button {
+        z-index: 2;
+    }
+    </style>
+</head>
+<body>
+
+<header>
+    <div id="logo">
+       <a href="https://savefrom.com.de/"><img src="./images/savefrom.com.im.png" width="206" height="40" alt="savefrom"></a>
+    </div>
+
+    <ul id="menu">
+      <li class="active"><a href="https://savefrom.com.de/">YouTube</a></li>
+      <li><a href="https://fb.savefrom.com.de/">Facebook</a></li>
+      <li class="bulr">Instagram</li>
+      <li class="bulr">Twitter</li>
+      <li class="bulr">TikTok</li>
+      <li class="bulr">How to</li>
+      <li class="bulr">Install</li>
+    </ul>
+
+  </header>
+
+    <div class="banner-sidebar banner_wrapper banner-right"> 
+
+        <script type="text/javascript">
+        atOptions = {
+            'key' : '2a0c819900b8c6d2453bf12c0cd15f75',
+            'format' : 'iframe',
+            'height' : 300,
+            'width' : 160,
+            'params' : {}
+        };
+        </script>
+        <script type="text/javascript" src="//direeyesightstray.com/2a0c819900b8c6d2453bf12c0cd15f75/invoke.js"></script>
+        
+    </div>
+    
+    <script>
+        
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                if (pair[0] === variable) {
+                    return decodeURIComponent(pair[1]);
+                }
+            }
+            return null;
+        }
+
+        
+        function isYouTubeUrl(url) {
+            return (url.includes('youtube.com') || url.includes('youtu.be'));
+        }
+
+        
+        function getYouTubeVideoId(url) {
+            var video_id = null;
+            if (url.includes('youtube.com')) {
+                var urlParams = new URLSearchParams(new URL(url).search);
+                video_id = urlParams.get('v');
+            } else if (url.includes('youtu.be')) {
+                video_id = url.split('/').pop();
+            }
+            return video_id;
+        }
+
+        
+        window.onload = function() {
+            var keyword = getQueryVariable("query");
+            var iframe_url = "";
+
+            if (keyword) {
+                
+                if (isYouTubeUrl(keyword)) {
+                    var video_id = getYouTubeVideoId(keyword);
+                    if (video_id) {
+                        iframe_url = "https://www.y2mate.com/youtube/" + video_id;
+                    }
+                } else {
+                    
+                    iframe_url = "https://www.y2mate.com/search/" + encodeURIComponent(keyword);
+                }
+
+                
+                document.getElementById("main-iframe").src = iframe_url;
+            }
+        }
+        </script>
+
+        <iframe id="main-iframe" frameborder="0" ></iframe>
+        
+        <div class="banner-ngang banner_wrapper ngang-pc"> 
+
+            <script type="text/javascript">
+            atOptions = {
+                'key' : '0795ce493bd84a67715bc35f22a0d260',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+            };
+            </script>
+            <script type="text/javascript" src="//direeyesightstray.com/0795ce493bd84a67715bc35f22a0d260/invoke.js"></script>
+
+        </div>
+
+        <div class="banner-sidebar banner_wrapper banner-left"> 
+
+            <script type="text/javascript">
+            atOptions = {
+                'key' : 'ab73ca9f058fae3efe9ae100abacdd2d',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+            };
+            </script>
+            <script type="text/javascript" src="//direeyesightstray.com/ab73ca9f058fae3efe9ae100abacdd2d/invoke.js"></script>
+
+        </div>
+
+        <script>
+        
+        var bannerWrappers = document.querySelectorAll('.banner_wrapper');
+
+        
+        bannerWrappers.forEach(function(bannerWrapper) {
+        
+        var xButton = document.createElement('button');
+
+        
+        xButton.innerHTML = '&times;';
+
+        
+        xButton.style.position = 'absolute';
+        xButton.style.top = '-5px'; 
+        xButton.style.right = '-5px'; 
+        xButton.style.padding = '0 5px'; 
+        xButton.style.border = 'none';
+        xButton.style.backgroundColor = '#ffffff'; 
+        xButton.style.color = '#000'; 
+        xButton.style.fontWeight = 'bold';
+        xButton.style.fontSize = '25px'; 
+        xButton.style.lineHeight = '24px'; 
+        xButton.style.cursor = 'pointer';
+        xButton.style.boxShadow = 'rgb(0, 0, 0) 0px 2px 4px';
+        xButton.style.borderRadius = '2px';
+        xButton.style.transition = 'background-color 0.3s'; 
+
+        
+        xButton.style.display = 'none';
+        setTimeout(function() {
+            xButton.style.display = 'block';
+        }, 3000);
+
+        
+        xButton.addEventListener('mouseover', function() {
+        xButton.style.backgroundColor = '#e0e0e0'; 
+    });
+
+        xButton.addEventListener('mouseout', function() {
+        xButton.style.backgroundColor = '#ffffff'; 
+    });
+
+    
+    xButton.addEventListener('click', function() {
+    
+    var iframes = bannerWrapper.querySelectorAll('iframe');
+    iframes.forEach(function(iframe) {
+        iframe.style.display = 'none';
+    });
+
+    
+    xButton.style.display = 'none';
+});
+
+        
+        bannerWrapper.appendChild(xButton);
+    });
+</script>
+</body>
+</html>
+
+
