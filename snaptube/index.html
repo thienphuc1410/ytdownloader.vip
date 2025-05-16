@@ -1,283 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SaveFrom - Download YouTube Videos in MP3, MP4 #Official</title>
-  <meta name="description" content="Complete guide to SaveFrom: Features, reviews, comparisons, and how-to for beginners. Learn to use SaveFrom effectively with step-by-step instructions.">
-  <meta name="robots" content="index, follow">
-  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-  <meta property="og:image" content="./images/banner.jpg">
-  
-  <style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-  body {
-    font-family: "Poppins", serif;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.6;
-  }
-  header {
-    color: #333;
-    box-shadow: 0 2px 10px 0 rgba(0,0,0,.07);
-    height: 40px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    font-size: 22px;
-    font-weight: 600;
-  }
-
-  .wrap {
-    max-width: 1280px;
-    margin: auto;
-    min-height: 500px;
-  }
-  #s1 .wrap {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    align-items: flex-start;
-    justify-content: center;
-  }
-
-  p.col-2 {
-    display: flex;
-  }
-
-  a.bnt {
-    margin-right: 50px;
-    background: #f50;
-    height: 50px;
-    width: 280px;
-    border-radius: 50px;
-    color: #fff;
-    font-weight: 600;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 11px 21px rgba(255,160,0,.3);
-    cursor: pointer;
-        text-decoration: none;
-    margin: auto;
-  }
-
-  h1 {
-    color: #333;
-    font-size: xx-large;
-    font-weight: 600;
-    text-align: center;
-  }
-
-  span#bnt-2 {
-    color: #555;
-    background: #e5e5e5;
-  }
-
-  p.sub-text {
-    color: #1977d6;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 18%;
-  }
-  p.sub-text img {
-    margin-right: 8px;
-  }
-  section#s1 {
-    background: url('./images/bg-1.png') 100% 100%/cover no-repeat;
-    height: 30vw;
-  }
-  section#partner {
-    text-align: center;
-  }
-
-  #partner h2:before,#partner h2:after {
-    content: "";
-    width: 190px;
-    border-top: solid 1px #ababab;
-    height: 1px;
-    display: inline-block;
-    margin: 0 100px;
-  }
-
-  #partner h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: small;
-    color: #ababab;
-    font-weight: 500;
-    margin-top: 50px;
-  }
-
-  ul.wrap-partner {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 36px;
-  }
-
-  ul.wrap-partner li img {
-    height: 45px;
-  }
-
-  ul.wrap-partner li {
-    margin: 20px 10px 0;
-  }
-
-  #s3 h2 {
-    text-align: center;
-  }
-
-  section#s3 {
-    background: #f9f9f9;
-    padding: 32px 12%;
-  }
-
-  .wrap_content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #s3 .wrap_content img {
-    max-width: 50%;
-  }
-
-  #s3 .wrap_content ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  #s3 .wrap_content ul li {
-    margin-bottom: 20px;
-  }
-
-  section#s4 {
-    text-align: center;
-    padding: 30px 0;
-  }
-
-  header img {
-    margin-right: 5px;
-  }
-  article {
-
-  }
-  body > footer {
-    background: #202020;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
-  }
-
-  @media only screen and (max-width: 600px) {
-    p.col-2 {
-      flex-direction: column;
-      width: 100%;
-      gap: 20px;
-      align-items: center;
+    <meta charset="UTF-8">
+    <title>SaveFrom - Download YouTube Videos in MP3, MP4 #Official</title>
+    <meta name="robots" content="nofollow, noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"> 
+    <style>
+    body {
+        margin: 0;
+        background: #181818;
+    }
+    iframe#main-iframe {
+        width: 100%;
+        height: 100vh;
+        display:block;
+        margin: auto;
+        position: fixed;
+    }
+    .banner-ngang {
+        position: fixed;
+        left: 50%;  
+        transform:translateX(-50%); 
+        bottom: 0;
+        display: flex;
+    }
+    .ngang-mobi{
+        display: none;
+    }
+    .banner-sidebar {
+        position: fixed;
+        left: 0;
+        top: 50%;
+        transform:translateY(-50%);
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-sidebar.banner-right {
+        right: 0;
+        left: auto;
+        padding-left: 17px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        width: 184px;
+        z-index: 1;
+        top: 0;
+        transform: inherit;
     }
 
-    ul.wrap-partner {
-      flex-direction: column;
-      padding: 0;
+    
+    @media only screen and (max-width: 1000px) {
+        iframe#main-iframe {
+            width: 100vw;
+        }
+        .banner-sidebar {
+            display: none!important;
+        }
+    }
+    @media only screen and (max-width: 728px) {
+
+        .banner-ngang {
+            display: none;
+        }
+        .ngang-mobi{
+            display: block;
+        }
+    }
+    .banner-sidebar.banner-right iframe {
+        z-index: 2;
     }
 
-    section#s1 {
-      height: auto;
-      padding-bottom: 30vh;
-      background-position: 68% bottom;
-      background-size: cover;
+    .banner-sidebar button {
+        z-index: 2;
     }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    #s1 .wrap {
-      align-items: center;
-    }
-
-    .wrap {
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-
-    h1 {
-      font-size: 17px;
-      text-align: center;
-    }
-
-    span.bnt {
-      margin: 0;
-    }
-
-    ::before {}
-
-    #partner h2:before, #partner h2:after {
-      width: 50px;
-      margin: 0 15px;
-    }
-
-    ul.wrap-partner {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    #s3 h2 {
-      font-size: larger;
-    }
-
-    .wrap_content {
-      flex-wrap: wrap;
-      flex-direction: column;
-    }
-
-    #s3 .wrap_content img {
-      max-width: 100%;
-    }
-  }
-  </style>
-
+    </style>
 </head>
-
 <body>
 
-  <header>
+    <div class="banner-sidebar banner_wrapper banner-right"> 
+         <script type="text/javascript">
+         atOptions = {
+            'key' : '231ef78e8e029f7a021d371b50b1d76b',
+            'format' : 'iframe',
+            'height' : 300,
+            'width' : 160,
+            'params' : {}
+        };
+        </script>
+        <script type="text/javascript" src="//direeyesightstray.com/231ef78e8e029f7a021d371b50b1d76b/invoke.js"></script>
+    </div>
 
-    <img src="./images/logo.png" width="30" height="30" alt="snaptube">snaptube
+    <iframe id="main-iframe" src="https://snaptube.tube/download/" frameborder="0" allowfullscreen></iframe>
 
-  </header>
-  
-    <article class="wrap">
+<div class="banner-ngang banner_wrapper ngang-pc"> 
+  <script type="text/javascript">
+    atOptions = {
+        'key' : '9239142c98e29ae27e21112788f92779',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+    };
+</script>
+<script type="text/javascript" src="//direeyesightstray.com/9239142c98e29ae27e21112788f92779/invoke.js"></script>
+</div>
 
-      <h1>Snaptube Download for Android</h1>
+<div class="banner-ngang banner_wrapper ngang-mobi"> 
+        
+ <script type="text/javascript">
+    atOptions = {
+        'key' : '5bdd5f38bca2e6758cebc8e37f9d42fb',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320,
+        'params' : {}
+    };
+</script>
+<script type="text/javascript" src="//direeyesightstray.com/5bdd5f38bca2e6758cebc8e37f9d42fb/invoke.js"></script>
 
-      <p style="text-align:center"><a id="bnt-1" class="bnt" href="https://d1otk4x7w4n016.cloudfront.net/temp_apk/484807/c958b1e0870ef8595507313d18ab8a7d/release2/snaptube/gitlab/apk/com.snaptube.premium/7.38.0.73850210/Click_me_to_install_SnapTube_tube_snaptubecom.apk">Download Snaptube</a></p>
-      
-      <p> Snaptube is a 100% free and secure Android app to download media from hundreds of sources. It will let you save unlimited audio and video files for free in multiple resolutions and bit rates. Downloading Snaptube is extremely simple, and you don’t have to root your device to do that as well.</p>
-      
-      <ul>
-      <li><b>Step 1: Download the Snaptube APK</b> <br>Open any web browser, go to the official website of Snaptube, and download its APK on your phone.</li>
-      
-      <li><b>Step 2: Install the Snaptube APK on your device</b> <br>Once the Snaptube APK has been downloaded, you can tap on it and grant your browser the needed permission to install apps from third-party sources.</li>
-      
-      <li><b>Step 3: Explore More with Snaptube</b> <br>That’s it! After installing Snaptube, launch it to watch or download your favorite videos for free.</li>
-      </ul>
+<script type="text/javascript">
+    atOptions = {
+        'key' : 'd32a49fb569abbed735655bf86f05954',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+    };
+</script>
+<script type="text/javascript" src="//direeyesightstray.com/d32a49fb569abbed735655bf86f05954/invoke.js"></script>
 
-    </article>
+    </div>
 
-    <footer><p>Copyright © 2025 Snaptube</p></footer>
 
-  </body>
+<div class="banner-sidebar banner_wrapper banner-left"> 
+<script type="text/javascript">
+    atOptions = {
+        'key' : '40a042dc2a488e7371ba3a5047d6e0e1',
+        'format' : 'iframe',
+        'height' : 600,
+        'width' : 160,
+        'params' : {}
+    };
+</script>
+<script type="text/javascript" src="//direeyesightstray.com/40a042dc2a488e7371ba3a5047d6e0e1/invoke.js"></script>
+</div>
 
-  </html>
+<script>
+        
+        var bannerWrappers = document.querySelectorAll('.banner_wrapper');
+
+        
+        bannerWrappers.forEach(function(bannerWrapper) {
+        
+        var xButton = document.createElement('button');
+
+        
+        xButton.innerHTML = '&times;';
+
+        
+        xButton.style.position = 'absolute';
+        xButton.style.top = '-5px'; 
+        xButton.style.right = '-5px'; 
+        xButton.style.padding = '0 5px'; 
+        xButton.style.border = 'none';
+        xButton.style.backgroundColor = '#ffffff'; 
+        xButton.style.color = '#000'; 
+        xButton.style.fontWeight = 'bold';
+        xButton.style.fontSize = '25px'; 
+        xButton.style.lineHeight = '24px'; 
+        xButton.style.cursor = 'pointer';
+        xButton.style.boxShadow = 'rgb(0, 0, 0) 0px 2px 4px';
+        xButton.style.borderRadius = '2px';
+        xButton.style.transition = 'background-color 0.3s'; 
+
+        
+        xButton.style.display = 'none';
+        setTimeout(function() {
+            xButton.style.display = 'block';
+        }, 3000);
+
+        
+        xButton.addEventListener('mouseover', function() {
+        xButton.style.backgroundColor = '#e0e0e0'; 
+    });
+
+        xButton.addEventListener('mouseout', function() {
+        xButton.style.backgroundColor = '#ffffff'; 
+    });
+
+    
+    xButton.addEventListener('click', function() {
+    
+    var iframes = bannerWrapper.querySelectorAll('iframe');
+    iframes.forEach(function(iframe) {
+        iframe.style.display = 'none';
+    });
+
+    
+    xButton.style.display = 'none';
+    });
+
+
+        
+        bannerWrapper.appendChild(xButton);
+    });
+</script>
+</body>
+</html>
+
+
