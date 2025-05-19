@@ -7,11 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="https://yggtorrent.stream/images/icon.png" type="image/x-icon">
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
     body {
         margin: 0;
         background: #22282f;
+        font-family: Montserrat;
+    }
+    .content-main {
+        max-width: 940px;
+        background: #fff;
+        padding: 15px 25px;
+        margin: 20px auto 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 16px;
+        color: #212529;
+        font-weight: bold;
+        padding: 5px;
+        text-align: center;
+        background: #eeeeee;
+        border: 1px solid #ddd;
+        text-transform: uppercase;
     }
 
+    h2 {
+        padding: 10px 6px 10px 6px;
+        border: 1px solid #ccc;
+        display: inline-block;
+        background: #f5f5f5;
+        border-radius: 4px;
+        color: #333333;
+        font-size: 15px;
+        width: 500px;
+        margin: 20px 0;
+    }
+
+    .content-main a {
+        background: #282828;
+        font-size: 26px;
+        padding: 15px 25px;
+        border-radius: 10px;
+        height: auto;
+        white-space: normal;
+        color: #fff;
+        display: table;
+        margin: 20px auto 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
     iframe#main-iframe {
         width: calc(100vw - 320px);
         height: 100vh;
@@ -86,6 +131,15 @@
 </head>
 <body>
 
+    <div class="content-main">
+        <h1>YggTorrent télécharger des films et séries en torrent magnet gratuit et illimité</h1>
+
+        <h2>Bienvenue sur YggTorrent !</h2>
+
+        <a href="https://www.yggtorrent3.com/home" target="_blank">Accéder à tous les fichiers de YggTorrent</a>
+
+    </div>
+
     <div class="banner-sidebar banner_wrapper banner-right"> 
       <script type="text/javascript">
       atOptions = {
@@ -99,11 +153,11 @@
     <script type="text/javascript" src="//direeyesightstray.com/bbdb3feda282390f459ea21a82d0b7cc/invoke.js"></script>
 </div>
 
-<iframe id="main-iframe" src="https://www.yggtorrent3.com/home" frameborder="0" allowfullscreen></iframe>
+
 
 <div class="banner-ngang banner_wrapper ngang-pc"> 
- <script type="text/javascript">
- atOptions = {
+   <script type="text/javascript">
+   atOptions = {
     'key' : 'bfaa720b4d4fa0de582e54b52ac16707',
     'format' : 'iframe',
     'height' : 90,
@@ -117,8 +171,8 @@
 
 
 <div class="banner-sidebar banner_wrapper banner-left"> 
- <script type="text/javascript">
- atOptions = {
+   <script type="text/javascript">
+   atOptions = {
     'key' : 'a673b79f8b3f9c1fc130ef787df39b59',
     'format' : 'iframe',
     'height' : 600,
@@ -130,64 +184,64 @@
 </div>
 
 <script>
-        
-        var bannerWrappers = document.querySelectorAll('.banner_wrapper');
 
-        
-        bannerWrappers.forEach(function(bannerWrapper) {
-        
-        var xButton = document.createElement('button');
+var bannerWrappers = document.querySelectorAll('.banner_wrapper');
 
-        
-        xButton.innerHTML = '&times;';
 
-        
-        xButton.style.position = 'absolute';
-        xButton.style.top = '-5px'; 
-        xButton.style.right = '-5px'; 
-        xButton.style.padding = '0 5px'; 
-        xButton.style.border = 'none';
-        xButton.style.backgroundColor = '#ffffff'; 
-        xButton.style.color = '#000'; 
-        xButton.style.fontWeight = 'bold';
-        xButton.style.fontSize = '25px'; 
-        xButton.style.lineHeight = '24px'; 
-        xButton.style.cursor = 'pointer';
-        xButton.style.boxShadow = 'rgb(0, 0, 0) 0px 2px 4px';
-        xButton.style.borderRadius = '2px';
-        xButton.style.transition = 'background-color 0.3s'; 
+bannerWrappers.forEach(function(bannerWrapper) {
+    
+    var xButton = document.createElement('button');
 
-        
-        xButton.style.display = 'none';
-        setTimeout(function() {
-            xButton.style.display = 'block';
-        }, 3000);
+    
+    xButton.innerHTML = '&times;';
 
-        
-        xButton.addEventListener('mouseover', function() {
+    
+    xButton.style.position = 'absolute';
+    xButton.style.top = '-5px'; 
+    xButton.style.right = '-5px'; 
+    xButton.style.padding = '0 5px'; 
+    xButton.style.border = 'none';
+    xButton.style.backgroundColor = '#ffffff'; 
+    xButton.style.color = '#000'; 
+    xButton.style.fontWeight = 'bold';
+    xButton.style.fontSize = '25px'; 
+    xButton.style.lineHeight = '24px'; 
+    xButton.style.cursor = 'pointer';
+    xButton.style.boxShadow = 'rgb(0, 0, 0) 0px 2px 4px';
+    xButton.style.borderRadius = '2px';
+    xButton.style.transition = 'background-color 0.3s'; 
+
+    
+    xButton.style.display = 'none';
+    setTimeout(function() {
+        xButton.style.display = 'block';
+    }, 3000);
+
+    
+    xButton.addEventListener('mouseover', function() {
         xButton.style.backgroundColor = '#e0e0e0'; 
     });
 
-        xButton.addEventListener('mouseout', function() {
+    xButton.addEventListener('mouseout', function() {
         xButton.style.backgroundColor = '#ffffff'; 
     });
 
     
     xButton.addEventListener('click', function() {
-    
-    var iframes = bannerWrapper.querySelectorAll('iframe');
-    iframes.forEach(function(iframe) {
-        iframe.style.display = 'none';
-    });
-
-    
-    xButton.style.display = 'none';
-});
-
+        
+        var iframes = bannerWrapper.querySelectorAll('iframe');
+        iframes.forEach(function(iframe) {
+            iframe.style.display = 'none';
+        });
 
         
-        bannerWrapper.appendChild(xButton);
+        xButton.style.display = 'none';
     });
+
+
+    
+    bannerWrapper.appendChild(xButton);
+});
 </script>
 </body>
 </html> 
